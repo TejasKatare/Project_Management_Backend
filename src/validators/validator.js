@@ -1,4 +1,5 @@
 import { body } from "express-validator";
+import {AvailableUserRole} from '../utils/constants.js'
 
 const userRegisterValidator = () => {
     return [
@@ -218,5 +219,6 @@ export {
     userForgotPasswordValidatorSchema,
     userResetForgotPasswordValidatorSchema,
     createProjectValidatorSchema,
-    addMemberToProjectValidatorSchema
+    addMemberToProjectValidatorSchema,
+    createProjectValidatorSchema
 };

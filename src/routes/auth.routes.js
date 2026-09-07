@@ -25,7 +25,7 @@ router
         loginUser
     );
 router.route('/verify-email/:verificationToken').get(verifyEmail);
-router.route('/refresh-Token').post(refreshAccessToken);
+router.route('/refresh-token').post(refreshAccessToken);
 router
     .route('/forgot-password')
     .post(
