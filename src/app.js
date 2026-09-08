@@ -4,6 +4,7 @@ import cookieParser from 'cookie-parser'
 import cors from 'cors'
 import healthCheckRouter from './routes/healthcheck.routes.js'
 import authRouter from './routes/auth.routes.js'
+import projectRouter from './routes/project.routes.js'
 dns.setServers(['1.1.1.1', '8.8.8.8']);
 const app = express();
 
@@ -26,6 +27,7 @@ app.use(
 
 app.use('/api/v1/healthcheck', healthCheckRouter);
 app.use('/api/v1/auth', authRouter);
+app.use('/api/v1/projects', projectRouter);
 
 app.get('/', (req, res) => {
   res.send('Hello World!')

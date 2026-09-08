@@ -220,5 +220,4 @@ export {
     userResetForgotPasswordValidatorSchema,
     createProjectValidatorSchema,
     addMemberToProjectValidatorSchema,
-    createProjectValidatorSchema
 };
